@@ -1,0 +1,41 @@
+{
+  "name": "Secure Password Storage",
+  "description": "Secure Password Storage",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "permissions": [
+    "storage", "activeTab", "scripting", "tabs"
+  ],
+  
+  "host_permissions":[
+      "http://fyp21s231.com/*"
+
+  ],
+
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["javascript/jquery.min.js",
+          "/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"],
+    "css": ["/bootstrap-5.0.2-dist/css/bootstrap.min.css"]
+}],
+  "action": {
+    "default_popup": "login.html",
+    "default_icon": {
+      "16": "/images/SPS.png",
+      "32": "/images/SPS.png",
+      "48": "/images/SPS.png",
+      "128": "/images/SPS.png"
+    }
+  },
+  "icons": {
+    "16": "/images/SPS.png",
+    "32": "/images/SPS.png",
+    "48": "/images/SPS.png",
+    "128": "/images/SPS.png"
+  }
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/forgetPassChange.css" />
+	<script src="javascript/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="a">
+		<h1 align="center"><b style="font-size:50px">Enter new Password</b></h1>
+		<div id="errorMsg" align="center" style="font-size:50px"></div>
+
+		<table align="center">
+			<tr>
+				<td>
+					Username:
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type = "text" id = "usernameE" class = "form-control" disabled>
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<div id="newPw"></div>
+					New Password:
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="input-group">
+						<input type="password" class="form-control" id="nPass">
+						<span class="input-group-text">
+							<i class="far fa-eye" id="togglePassword1"></i>
+						</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="newConfPw"></div>
+					Confirm new Password:
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="input-group">
+						<input type="password" class="form-control" id="nConfPass">
+						<span class="input-group-text">
+							<i class="far fa-eye" id="togglePassword2"></i>
+						</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input class="btn btn-outline-warning" style="color:black" id="submitBtn" type="submit" value="Submit" />
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script src="javascript/forgetPassChange.js"></script>
+</body>
+
+</html>

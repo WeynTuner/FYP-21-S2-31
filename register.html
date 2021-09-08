@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/page.css" />
+	<link rel="stylesheet" href="css/register.css" />
+	<script src="javascript/jquery.min.js"></script>
+</head>
+
+<body">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color : #959c99">
+		<div class="container-fluid">
+			<span class="navbar-brand me-2">
+				<img src="/images/SPS.png" width="70" height="70"> Secure Password Storage
+			</span>
+		</div>
+	</nav>
+	<div id="a">
+		<h1 align="center"><b style="font-size:70px">Registration</b></h1>
+
+		<div id="errorMsg"></div>
+
+		<table align="center">
+			<tbody>
+				<tr>
+					<td>
+						Name<span style="float : right;">:</span>
+					</td>
+					<td>
+						<div id="nameContainer" class="customDiv"></div>
+						<input type="text" class="form-control" id="nameE">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Username<span style="float : right;">:</span>
+					</td>
+					<td>
+						<div id="usernameContainer" class="customDiv"></div>
+						<input type="text" class="form-control" id="usernameE" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Password<span style="float : right;">:</span>
+					</td>
+					<td>
+						<div>
+							<div id="passwordContainer" class="customDiv"></div>
+							<div class="input-group">
+								<input type="password" class="form-control" id="passwordD">
+								<span class="input-group-text">
+									<i class="far fa-eye" id="togglePassword"></i>
+								</span>
+							</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div id="generatePasswordHere" class="d-grid gap-2">
+							<button class="buttonCustom" id="generatePasswordButton" type="button">Click me to
+								generate password!</button>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Email<span style="float : right;">:</span>
+					</td>
+					<td>
+						<div id="emailContainer" class="customDiv"></div>
+						<input type="text" class="form-control" id="emailL" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone Number<span style="float : right;">:</span>
+					</td>
+					<td>
+						<div id="phoneContainer" class="customDiv"></div>
+						<input type="text" class="form-control" id="phoneE" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div id="SQuestionContainer"></div>
+						<label for="SQuestion">In case you forgot your password:</label><br />
+						<select class="form-select" id="SQuestion" name="cars">
+							<option value="Town">What was the name of the town you lived in as child?</option>
+							<option value="School">What was the name of your primary school?</option>
+							<option value="Mum">What is your mum&#39;s maiden name?</option>
+							<option value="Job">What is your dream job as a child?</option>
+							<option value="Book">What is the name of your first favourite book?</option>
+							<option value="Food">What is your favourite food?</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Your answer<span style="float : right;">:</span>
+					</td>
+					<td>
+						<div id="SAnswerContainer" class="customDiv"></div>
+						<input type="text" class="form-control" id="SAnswer" pattern="^[a-zA-Z\s]+" />
+					</td>
+				<tr>
+					<td colspan="2">
+						<div class="d-grid gap-2">
+							<button type="submit" class="btn btn-warning" style="color:black" id="registerBtn">
+								<span style="font-weight: bold;">Submit</span> </button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="javascript/register.js"></script>
+	</body>
+
+</html>

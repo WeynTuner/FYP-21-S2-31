@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/viewWebsites.css">
+     <script src="javascript/jquery.min.js"></script>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color : #959c99">
+          <div class="container-fluid">
+               <span class="navbar-brand me-2">
+                    <img src="/images/SPS.png" width="70" height="70"> Secure Password Storage
+               </span>
+               <div class="navbar-brand profileNav">
+                    <div class="dropdown">
+                         <button class="dropdown-toggle dropdown-menu-end dropdown-menu-lg-start dropdownNavbar"
+                              type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                         </button>
+                         <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="editProfile.html">Edit Profile</a></li>
+                              <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </nav>
+     <div class="container-fluid">
+          <div class="row half p-3">
+               <div class="col-sm-2 d-flex flex-column justify-content-start  bg-dark">
+                    <div style="margin-top: 5%;">
+                         <button type="button" class="buttonCustom disabled" id="openPasswordD">Password <span
+                                   style="float : right;">></span></button>
+                         <button type="button" class="buttonCustom" id="openNotesS">Notes <span
+                                   style="float : right;">></span></button>
+                         <div class="dropdown">
+                              <button class="dropdown-toggle buttonCustom" type="button" id="dropdownMenuButton1"
+                                   data-bs-toggle="dropdown">
+                                   Add Items
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                   <li><a class="dropdown-item" href="addWebsites.html">Password</a></li>
+                                   <li><a class="dropdown-item" href="addNotes.html">Notes</a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-10 bg-white">
+                    <h1>
+                         <select id="SortBy" class="form-select padding-x: 20%">
+                              <option value="WebName" selected>Sort By: WebName</option>
+                              <option value="WebUsername">Sort By: WebUsername</option>
+                         </select>
+                    </h1>
+                    <div id="errorMsg"></div>
+                    <div id="printHere"> </div>
+               </div>
+          </div>
+     </div>
+     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+     <script src="javascript/viewWebsites.js"></script>
+</body>
+
+</html>

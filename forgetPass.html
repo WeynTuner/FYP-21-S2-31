@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/forgetPass.css">
+	<script src="javascript/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color : #959c99">
+		<div class="container-fluid">
+			<span class="navbar-brand me-2">
+				<img src="/images/SPS.png" width="70" height="70"> Secure Password Storage
+			</span>
+	</nav>
+	<h1 align="center"><b style="font-size:50px">Forget Password</b></h1>
+	<table align="center">
+		<tr>
+			<td>
+				<div id="errorMsg"></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="emailContainer"></div>
+				Username/Email:
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input id="userEmailL" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+					title="Please check your email" type="text" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="SQ">
+
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td align = "center">
+				<input id="submitBtn" class="btn btn-outline-warning" style="color:black" type="submit"
+					value="Submit" />
+			</td>
+		</tr>
+	</table>
+	</div>
+	<script src="javascript/forgetPass.js"></script>
+</body>
+
+</html>
